@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-bluebubbles",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "The n8n integration node for BlueBubbles brings automation to iMessage",
     "license": "MIT",
     "homepage": "https://bluebubbles.app",
