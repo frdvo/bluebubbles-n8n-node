@@ -15,19 +15,19 @@ import { GenericDictionary, WorkflowContext } from './Types';
  * @returns The raw HTTP response
  */
 export async function rawRequest(
-    this: WorkflowContext,
-    method: string,
-    endpoint: string,
-    params: GenericDictionary,
-    headers: GenericDictionary,
-    data: GenericDictionary | GenericDictionary[]
+  this: WorkflowContext,
+  method: string,
+  endpoint: string,
+  params: GenericDictionary,
+  headers: GenericDictionary,
+  data: GenericDictionary | GenericDictionary[]
 ): Promise<GenericDictionary | GenericDictionary[]> {
-    return (await bluebubblesRequest({
-        ctx: this,
-        method: method,
-        endpoint: endpoint,
-        body: data,
-        params,
-        headers,
-    })) as GenericDictionary | GenericDictionary[];
+  return (await bluebubblesRequest({
+    ctx: this,
+    method: method,
+    endpoint: endpoint,
+    body: data,
+    params,
+    headers,
+  })) as GenericDictionary | GenericDictionary[];
 }

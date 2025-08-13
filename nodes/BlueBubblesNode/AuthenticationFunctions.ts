@@ -5,15 +5,15 @@
  * @returns A sanitized host URL
  */
 export const sanitizeHost = (host: string): string => {
-    let http = true;
-    let finalHost = host.toLowerCase();
-    if (finalHost.startsWith('http://')) {
-        finalHost = finalHost.replace('http://', '');
-    } else if (finalHost.startsWith('https://')) {
-        http = false;
-        finalHost = finalHost.replace('http://', '');
-    }
+  let http = true;
+  let finalHost = host.toLowerCase();
+  if (finalHost.startsWith('http://')) {
+    finalHost = finalHost.replace('http://', '');
+  } else if (finalHost.startsWith('https://')) {
+    http = false;
+    finalHost = finalHost.replace('http://', '');
+  }
 
-    if (finalHost.includes('/')) finalHost = finalHost.split('/')[0];
-    return `${http ? 'http' : 'https'}://${finalHost}`;
+  if (finalHost.includes('/')) finalHost = finalHost.split('/')[0];
+  return `${http ? 'http' : 'https'}://${finalHost}`;
 };

@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"lib": [
-			"es2017"
+			"es2020"
 		],
 		"types": [
 			"node",
@@ -15,16 +15,21 @@
 		"preserveConstEnums": true,
 		"declaration": true,
 		"outDir": "./dist/",
-		"target": "es2017",
-		"sourceMap": true
+		"target": "es2020",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
 	},
 	"include": [
 		"credentials/**/*",
-		"src/**/*",
 		"nodes/**/*",
 		"test/**/*"
 	],
 	"exclude": [
-		"**/*.spec.ts"
+		"**/*.spec.ts",
+		"dist",
+		"node_modules"
 	]
 }
