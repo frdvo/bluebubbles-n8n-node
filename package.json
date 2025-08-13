@@ -18,7 +18,8 @@
         "test": "jest"
     },
     "files": [
-        "dist"
+        "dist",
+        "screenshots"
     ],
     "n8n": {
         "credentials": [
@@ -27,6 +28,9 @@
         "nodes": [
             "dist/nodes/BlueBubblesNode/BlueBubblesNode.node.js"
         ]
+    },
+    "peerDependencies": {
+        "n8n-workflow": "^1.0.0"
     },
     "devDependencies": {
         "@types/express": "^4.17.21",
@@ -37,12 +41,12 @@
         "eslint": "^8.57.0",
         "gulp": "^4.0.2",
         "jest": "^29.7.0",
-        "n8n-workflow": "^1.14.1",
+        "n8n-workflow": "^1.82.0",
         "ts-jest": "^29.1.2",
         "typescript": "^5.3.3"
     },
     "dependencies": {
-        "n8n-core": "^1.14.1"
+        "n8n-core": "^1.82.0"
     },
     "jest": {
         "transform": {

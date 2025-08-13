@@ -1,5 +1,5 @@
 // n8n-specific imports
-import { IExecuteFunctions, IDataObject, INodeExecutionData, INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
+import { IExecuteFunctions, IDataObject, INodeExecutionData, INodeType, INodeTypeDescription, NodeConnectionTypes } from 'n8n-workflow';
 
 // Relative imports
 import { dispatchRawRequest, dispatchSendText } from './ActionDispatcher';
@@ -23,8 +23,8 @@ export class BlueBubblesNode implements INodeType {
       name: 'BlueBubbles',
       color: '#772244',
     },
-    inputs: [NodeConnectionType.Main],
-    outputs: [NodeConnectionType.Main],
+    inputs: [NodeConnectionTypes.Main],
+    outputs: [NodeConnectionTypes.Main],
     credentials: [
       {
         name: 'BlueBubblesCredentials',
