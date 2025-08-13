@@ -1,5 +1,5 @@
-import { IExecuteFunctions, IExecuteSingleFunctions, IHookFunctions, ILoadOptionsFunctions } from 'n8n-core';
-import { IDataObject } from 'n8n-workflow/dist/src/Interfaces';
+import { IExecuteFunctions, IExecuteSingleFunctions, IHookFunctions, ILoadOptionsFunctions } from 'n8n-workflow';
+import { IDataObject } from 'n8n-workflow';
 
 export type WorkflowContext = IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions;
 export type GenericDictionary = { [key: string]: any };
